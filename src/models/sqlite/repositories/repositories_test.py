@@ -16,3 +16,8 @@ def test_list_people():
   repo = PeopleRepository(db_connection_handler)
   response = repo.list_people()
   print(response)
+
+def test_delete_pet():
+  name = "belinha"
+  repo = PetsRepository(db_connection_handler)
+  repo.delete_pets(name)
