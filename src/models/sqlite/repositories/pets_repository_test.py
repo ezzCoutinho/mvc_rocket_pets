@@ -34,4 +34,15 @@ def test_list_pets():
 
   assert response[0].name == "dog"
   assert response[1].name == "cat"
- 
+
+def test_delete_pet():
+  name = "dog"
+
+  mock_connection = MockConnection()
+  repo = PetsRepository(mock_connection)
+  repo.delete_pets(name)
+
+  mock_connection.session.query.assert_called_once_with(PetsTable)
+  mock_connection.session.filter.assert_called_once_with(PetsTable.name == "dog")
+  mock_connection.session.delete.assert_called_once()
+  mock_connection.session.commit.assert_called_once()
