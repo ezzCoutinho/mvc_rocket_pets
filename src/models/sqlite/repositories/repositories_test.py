@@ -17,10 +17,12 @@ def test_delete_pet():
   repo = PetsRepository(db_connection_handler)
   repo.delete_pets(name)
 
+@pytest.mark.skip(reason="interacao com o banco")
 def test_insert_person():
-  first_name = "Teste"
-  last_name = "teste"
-  age = 20
-  pet_id = 1
+  person = 1
+
   repo = PeopleRepository(db_connection_handler)
-  repo.inser_person(first_name, last_name, age, pet_id)
+  response = repo.get_person(person)
+  print()
+  print(response)
+  print(response.pet_name)
