@@ -9,3 +9,7 @@ Hoje criamos testes de integração com o banco de dados, fizemos algumas modifi
 ## 11/03
 
 Hoje aplicamos skips em alguns testes do pytest, criamos um método para deletar um pet específico e criamos testes unitários para o método list_pets.
+
+## 14/03
+
+Hoje finalizamos os testes de integração dos pets e iniciamos os testes de integração para people. Além disso, implementamos um método que permite listar qual pessoa adotou um determinado pet, realizando a busca através do ID do pet adotado.
