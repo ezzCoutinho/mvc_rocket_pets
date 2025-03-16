@@ -13,3 +13,7 @@ Hoje aplicamos skips em alguns testes do pytest, criamos um método para deletar
 ## 14/03
 
 Hoje finalizamos os testes de integração dos pets e iniciamos os testes de integração para people. Além disso, implementamos um método que permite listar qual pessoa adotou um determinado pet, realizando a busca através do ID do pet adotado.
+
+## 15/03
+
+Hoje criamos interfaces para as tabelas do repositório e as integramos com o banco de dados. Em seguida, desenvolvemos o controller PersonCreator na pasta controllers, responsável por criar uma nova pessoa no sistema, implementando os métodos necessários e suas respectivas validações.
