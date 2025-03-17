@@ -2,10 +2,10 @@ import pytest
 from src.controllers.person_creator_controller import PersonCreatorController
 
 class MockPeopleRepository:
-  def insert_person(self, first_name: str, last_name: str, age: int, pet_id: int):
+  def insert_person(self, first_name: str, last_name: str, age: int, pet_id: int) -> None:
     pass
 
-def test_create():
+def test_create() -> None:
   person_infor = {
     "first_name": "Fulano",
     "last_name": "de Tal",
@@ -20,7 +20,7 @@ def test_create():
   assert response["data"]["count"] == 1
   assert response["data"]["attributes"] == person_infor
 
-def test_create_error():
+def test_create_error() -> None:
   person_infor = {
     "first_name": "Fulano123",
     "last_name": "de Tal",
