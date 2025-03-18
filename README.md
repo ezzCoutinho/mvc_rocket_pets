@@ -17,3 +17,13 @@ Hoje finalizamos os testes de integração dos pets e iniciamos os testes de int
 ## 15/03
 
 Hoje criamos interfaces para as tabelas do repositório e as integramos com o banco de dados. Em seguida, desenvolvemos o controller PersonCreator na pasta controllers, responsável por criar uma nova pessoa no sistema, implementando os métodos necessários e suas respectivas validações.
+
+## 17/03
+
+Hoje desenvolvemos e implementamos quatro novos controllers:
+- PersonCreator: responsável por criar novas pessoas no sistema para adoção de pets
+- PersonFinder: permite encontrar uma pessoa específica através do seu ID
+- PetList: responsável por listar todos os pets cadastrados no sistema
+- PetDeleter: permite remover um pet do sistema através do seu nome
+
+Além disso, criamos testes unitários para cada um desses controllers, garantindo seu funcionamento adequado.
