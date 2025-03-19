@@ -1,8 +1,10 @@
+#pylint: disable=line-too-long
 from typing import Dict
 import re
 from src.models.sqlite.interfaces.people_repository_interface import PeopleRepositoryInterface
+from src.controllers.interfaces.person_creator_controller_interface import PersonCreatorControllerInterface
 
-class PersonCreatorController:
+class PersonCreatorController(PersonCreatorControllerInterface):
   def __init__(self, people_repository: PeopleRepositoryInterface) -> None:
     self.__people_repository = people_repository
 
