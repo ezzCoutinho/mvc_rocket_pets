@@ -27,3 +27,7 @@ Hoje desenvolvemos e implementamos quatro novos controllers:
 - PetDeleter: permite remover um pet do sistema através do seu nome
 
 Além disso, criamos testes unitários para cada um desses controllers, garantindo seu funcionamento adequado.
+
+## 18/03
+
+Hoje implementamos a interface base para todos os controllers do nosso padrão MVC (Model-View-Controller), estabelecendo um contrato comum para padronizar a estrutura dos controllers no projeto.
