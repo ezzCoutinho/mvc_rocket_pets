@@ -31,3 +31,7 @@ Além disso, criamos testes unitários para cada um desses controllers, garantin
 ## 18/03
 
 Hoje implementamos a interface base para todos os controllers do nosso padrão MVC (Model-View-Controller), estabelecendo um contrato comum para padronizar a estrutura dos controllers no projeto.
+
+## 20/03
+
+Hoje implementamos a view do nosso projeto, criando interfaces e views para cada controller. Além disso, desenvolvemos a interface base para todas as views do nosso padrão MVC.
