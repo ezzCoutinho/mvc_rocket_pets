@@ -35,3 +35,12 @@ Hoje implementamos a interface base para todos os controllers do nosso padrão M
 ## 20/03
 
 Hoje implementamos a view do nosso projeto, criando interfaces e views para cada controller. Além disso, desenvolvemos a interface base para todas as views do nosso padrão MVC.
+
+
+## 21/03
+
+Hoje implementamos a pasta main, que contém a estrutura principal da aplicação. Nela, criamos o padrão Composite que integra as três camadas da arquitetura MVC (Model, View e Controller) de forma organizada e com responsabilidades bem definidas. Desenvolvemos três rotas:
+- Uma rota de teste para validar a configuração
+- Duas rotas para o PersonController:
+  - POST /people: para criar uma nova pessoa
+  - GET /people/{id}: para buscar uma pessoa específica pelo ID
