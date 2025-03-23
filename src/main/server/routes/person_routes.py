@@ -14,7 +14,7 @@ def create_person():
   return jsonify(http_response.body), http_response.status_code
 
 @person_routes_bp.route("/people/<string:person_id>", methods=["GET"])
-def get_person(person_id: str):
+def find_person(person_id: str):
   http_request = HttpRequest(param={"person_id": person_id})
   view = person_finder_composer()
 
