@@ -44,3 +44,14 @@ Hoje implementamos a pasta main, que contém a estrutura principal da aplicaçã
 - Duas rotas para o PersonController:
   - POST /people: para criar uma nova pessoa
   - GET /people/{id}: para buscar uma pessoa específica pelo ID
+
+## 22/03
+
+Hoje implementamos duas novas rotas para o gerenciamento de pets:
+- GET /pets: lista todos os pets cadastrados no sistema
+- DELETE /pets/{name}: remove um pet específico através do seu nome
+
+Também realizamos ajustes importantes no código:
+- Removemos uma exception desnecessária no PetDeleterController
+- Corrigimos a validação de deleção para seguir o padrão HTTP 204 (No Content)
+- Implementamos os composers necessários para integrar as camadas Model, View e Controller
