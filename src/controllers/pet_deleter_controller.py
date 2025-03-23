@@ -13,7 +13,5 @@ class PetDeleterController(PetDeleterControllerInterface):
 
   def __delete_pets_in_db(self, name: str) -> None:
     pet = self.__pets_repository_interface.delete_pets(name)
-    if not pet:
-      raise Exception("Pet not found!")
 
     return pet
