@@ -55,3 +55,19 @@ Também realizamos ajustes importantes no código:
 - Removemos uma exception desnecessária no PetDeleterController
 - Corrigimos a validação de deleção para seguir o padrão HTTP 204 (No Content)
 - Implementamos os composers necessários para integrar as camadas Model, View e Controller
+
+
+## 23/03
+
+Hoje implementamos melhorias significativas no tratamento de erros da aplicação:
+
+1. Criação de Erros Personalizados:
+   - Desenvolvemos classes de erro customizadas (HttpBadRequest, HttpNotFound e HttpunprocessableEntity)
+   - Implementamos respostas padronizadas para cada tipo de erro
+   - Integramos os erros personalizados no PersonFinderController e PersonCreatorController
+
+2. Validação de Dados com Pydantic:
+   - Adicionamos a biblioteca Pydantic para validação de dados
+   - Implementamos schemas para validar automaticamente os dados de entrada
+
+Essas mudanças melhoram a robustez da aplicação e fornecem feedback mais claro aos usuários quando ocorrem erros.
