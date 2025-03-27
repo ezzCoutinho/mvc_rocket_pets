@@ -92,3 +92,20 @@ Hoje focamos em melhorar a qualidade e confiabilidade do nosso código:
    - Implementamos a validação Pydantic no PersonCreatorView
 
 Essas implementações aumentam a confiabilidade do sistema e garantem que a criação de pessoas funcione conforme o esperado.
+
+
+## 26/03
+
+Hoje concluímos o projeto com as seguintes implementações:
+
+1. Centralização do Tratamento de Erros:
+   - Implementamos o ErrorController para gerenciar todos os erros da aplicação
+   - Padronizamos as respostas de erro em todas as rotas
+   - Integramos o tratamento de erros com os tipos HTTP personalizados (BadRequest, NotFound, UnprocessableEntity)
+
+2. Finalização do Módulo:
+   - Revisamos e testamos todas as funcionalidades implementadas
+   - Garantimos que todas as rotas estão utilizando o tratamento de erros centralizado
+   - Verificamos a cobertura de testes e documentação
+
+Com essas implementações, finalizamos o módulo com uma arquitetura robusta e bem estruturada, seguindo as melhores práticas de desenvolvimento.
